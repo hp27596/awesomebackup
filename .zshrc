@@ -160,3 +160,11 @@ PERL_MM_OPT="IN"
 
 set -o vi
 
+function  vi-yank-xclip {
+	zle vi-yank
+	echo "$CUTBUFFER" | xclip -i
+}
+
+zle -N vi-yank-xclip
+bindkey -M vicmd 'y' vi-yank-xclip
+
