@@ -15,7 +15,7 @@ cp --parents -r /etc/X11/xorg.conf.d/ $HOME/awesomebackup
 
 #cp -p -r ~/config-alacritty $HOME/dotfiles
 
-if [[ $(ls -a | grep .config) != '' ]]; then
+if [[ $(ls -a | grep .config) == '' ]]; then
   mkdir .config
 fi
 
