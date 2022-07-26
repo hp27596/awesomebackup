@@ -11,6 +11,7 @@ export HISTCONTROL=ignoredups:erasedups
 
 unsetopt autocd #this is just a pain in the ass most of the time
 
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -156,3 +157,6 @@ PERL5LIB="/home/hp/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/hp/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/hp/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="IN"
+
+set -o vi
+
