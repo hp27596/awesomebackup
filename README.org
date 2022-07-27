@@ -40,7 +40,7 @@ Ideally, if I were you, I'd look into which tools I'd like to check out, and onl
 
 ** Extras
 *** Scripts
-There's a bunch of scripts I wrote and find useful in ~~/.config/misc/~ folder. Check it out if you like. The dmenu script to launch scripts is ~dm-scriptlauncher.sh~.
+There's a bunch of scripts I wrote and find useful in =~/.config/misc/= folder. Check it out if you like. The dmenu script to launch scripts is ~dm-scriptlauncher.sh~.
 
 *** Dmenu
 I use a lot of dmenu for my workflow convenience. Dmenu scripts are listed as =dm-= something in my scripts folder. I find dmenu the perfect menu for scripting, and I don't find the need to use anything else.
