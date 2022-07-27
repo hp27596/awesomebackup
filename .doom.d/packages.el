@@ -26,6 +26,7 @@
 (package! tree-sitter-langs)
 (package! visual-fill-column)
 (package! dashboard)
+(package! csv-mode)
 ;; (package! toc-org)
 ;; (package! eww)
 ;; (package! minimap)

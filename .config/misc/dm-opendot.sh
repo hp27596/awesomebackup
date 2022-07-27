@@ -10,7 +10,7 @@ declare -a options=(
     "AwesomeWM current theme - ~/.config/awesome/themes/holo/theme.lua"
     "Qtile config.py - ~/.config/qtile/config.py"
     "Emacs config.el - ~/.doom.d/config.el"
-    "Emacs init.el - ~/.doom.d/config.el"
+    "Emacs init.el - ~/.doom.d/init.el"
     "Emacs packages.el - ~/.doom.d/packages.el"
     "Dunstrc - ~/.config/dunst/dunstrc"
     "Alacritty - ~/.config/alacritty/alacritty.yml"

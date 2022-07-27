@@ -224,7 +224,7 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-molokai)
 ;; This determines the style of line numbers in effect. If set to `nil', line
-;; numbers are di55sabled. For relative line numbers, set this to `relative'.
+;; numbers are di55sabled. For relative line numbers, set this to `relative'. For normal style, set this to `visual'
 (setq display-line-numbers-type 'relative)
 
 ;; If you use `org' and don't want your org files in the default location below,

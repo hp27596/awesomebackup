@@ -29,7 +29,7 @@ run google-chrome-stable --enable-features=VaapiVideoDecoder,VaapiVideoEncoder -
 
 sleep 1
 tmux kill-server &
-alacritty --class tmux,tmux -e tmux &
+alacritty --name tmux -e tmux &
 
 sh ~/.config/qtile/scripts/batterynotification.sh &
 
