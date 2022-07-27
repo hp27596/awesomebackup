@@ -23,7 +23,7 @@ This repo is meant to be used as my backup repo. I *STRONGLY* advise against bli
 My config also goes through several iterations of changes and optimization. What you see in the photos today might not be there tomorrow. It's probably available in the repo history somewhere though. Ask me if you have any questions.
 
 ** Why is everything so large?
-I'm using a 7 inch umpc, hence the scaling needs to be that way. The plus side is it makes for good demonstration and screenshots. You can scale back the DPI with the file ~~/.Xresources~.
+I'm using a 7 inch umpc, hence the scaling needs to be that way. The plus side is it makes for good demonstration and screenshots. You can scale back the DPI with the file =~/.Xresources=.
 
 [[MVIMG_20220721_234851.jpg]]
 
