@@ -27,7 +27,7 @@ cp -r ~/.doom.d/ $HOME/awesomebackup/
 cp /etc/{environment,pacman.conf,vconsole.conf} $HOME/awesomebackup/etc/
 
 # copy other dot files
-rsynnc -Pra $HOME/{'.gtkrc-2.0',.vimrc,.zshrc,.xprofile,.Xresources,.tmux.conf,.ticker.yaml} $HOME/awesomebackup
+rsync -Pra $HOME/{'.gtkrc-2.0',.vimrc,.zshrc,.xprofile,.Xresources,.tmux.conf,.ticker.yaml} $HOME/awesomebackup
 
 # Check git status
 gs="$(git status | grep -i "modified")"
