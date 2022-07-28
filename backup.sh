@@ -19,7 +19,7 @@ if [[ $(ls -a | grep .config) == '' ]]; then
   mkdir .config
 fi
 
-cp -p -r ~/.config/{awesome,misc,alacritty,bottom,btop,cmus,dunst,fcitx5,feh,'gtk-2.0','gtk-3.0',mpv,nvim,picom,ranger,dmenu-frecency,zathura} $HOME/awesomebackup/.config
+rsync -r ~/.config/{awesome,misc,alacritty,bottom,btop,cmus,dunst,fcitx5,feh,'gtk-2.0','gtk-3.0',mpv,nvim,picom,ranger,dmenu-frecency,zathura} $HOME/awesomebackup/.config
 
 cp -r ~/.doom.d/ $HOME/awesomebackup/
 # cp -r ~/.fonts/ $HOME/awesomebackup/
