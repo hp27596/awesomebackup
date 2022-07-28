@@ -19,7 +19,7 @@ if [[ $(ls -a | grep .config) == '' ]]; then
   mkdir .config
 fi
 
-rsync -Pra ~/.config/{awesome,misc,alacritty,bottom,btop,cmus,dunst,fcitx5,feh,'gtk-2.0','gtk-3.0',mpv,nvim,picom,ranger,dmenu-frecency,zathura} $HOME/awesomebackup/.config --delete
+rsync -Pra --delete ~/.config/{awesome,misc,alacritty,bottom,btop,cmus,dunst,fcitx5,feh,'gtk-2.0','gtk-3.0',mpv,nvim,picom,ranger,dmenu-frecency,zathura} $HOME/awesomebackup/.config
 
 cp -r ~/.doom.d/ $HOME/awesomebackup/
 # cp -r ~/.fonts/ $HOME/awesomebackup/
@@ -27,7 +27,7 @@ cp -r ~/.doom.d/ $HOME/awesomebackup/
 cp /etc/{environment,pacman.conf,vconsole.conf} $HOME/awesomebackup/etc/
 
 # copy other dot files
-cp $HOME/{'.gtkrc-2.0',.vimrc,.zshrc,.xprofile,.Xresources,.tmux.conf,.ticker.yaml} $HOME/awesomebackup
+rsynnc -Pra $HOME/{'.gtkrc-2.0',.vimrc,.zshrc,.xprofile,.Xresources,.tmux.conf,.ticker.yaml} $HOME/awesomebackup
 
 # Check git status
 gs="$(git status | grep -i "modified")"
