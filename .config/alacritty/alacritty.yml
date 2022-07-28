@@ -52,4 +52,4 @@ colors:
 
 key_bindings:
   - { key: Key4, mode: Vi|~Search, action: Last }
-  - { key: M, mods: Alt, mode: ~Search, action: ToggleViMode }
+  - { key: Escape, mods: Alt, mode: ~Search, action: ToggleViMode }

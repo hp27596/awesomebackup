@@ -37,13 +37,17 @@
 ;; wordcount
 (wc-mode t)
 (define-key evil-normal-state-map "\M-c" 'wc-count)
-;; Swap workspace
+;; Faster workspace manipulation
 (map! :leader
       :prefix "TAB"
-      :desc "+workspace/swap-left" "-" #'+workspace/swap-left)
+      :desc "+swap workspace to the left" "-" #'+workspace/swap-left)
 (map! :leader
       :prefix "TAB"
-      :desc "+workspace/swap-right" "=" #'+workspace/swap-right)
+      :desc "swap workspace to the right" "=" #'+workspace/swap-right)
+(map! :leader
+      :desc "next workspace" "-" #'+workspace:switch-previous)
+(map! :leader
+      :desc "previous workspace" "=" #'+workspace:switch-next)
 ;; faster split manipulation
 (map! :leader
       :desc "evil-window-delete" "d" #'evil-window-delete)

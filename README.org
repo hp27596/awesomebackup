@@ -8,6 +8,8 @@ I wrote about my full experience daily driving AwesomeWM [[https://peterconfiden
 
 [[Placeholder]]
 
+My dotfiles and configs are, for the most part, purely functional for me. I like things looking nice, but never at the cost of workflow optimization. I like fitting lots of things in my screen. Of course, if something looks nice, then I won't complain. I still use picom for the love of god.
+
 ** Table of Contents :TOC_3:
   - [[#read-this][READ THIS!]]
   - [[#why-is-everything-so-large][Why is everything so large?]]

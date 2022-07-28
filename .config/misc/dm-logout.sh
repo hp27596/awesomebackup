@@ -12,9 +12,13 @@ if [[ $chosen = "0. Screen Off" ]]; then
 elif [[ $chosen = "4. Suspend" ]]; then
 	systemctl suspend
 elif [[ $chosen = "1. Logout" ]]; then
-	# echo 'shutdown()' | qtile shell ## qtile specific
-	# kill -9 -1 ## system agnostic but doesn't let applications close correctly, use if no other choice.
-	echo 'awesome.quit()' | awesome-client
+	if [ $pgrep awesome ]; then
+		echo 'awesome.quit()' | awesome-client
+	elif [ $pgrep qtile ]; then
+		echo 'shutdown()' | qtile shell
+	else
+		kill -9 -1 ## system agnostic but doesn't let applications close correctly, use if no other choice.
+	fi
 elif [[ $chosen = "2. Shutdown" ]]; then
 	systemctl poweroff
 elif [[ $chosen = "3. Reboot" ]]; then
