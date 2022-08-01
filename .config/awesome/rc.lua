@@ -207,8 +207,9 @@ globalkeys = my_table.join(
               {description = "Reload awesome", group = "awesome"}),
     awful.key({ modkey, "Shift" }, "q",  function () awful.spawn.with_shell("dm-logout") end,
               {description = "Quit awesome", group = "awesome"}),
-    awful.key({ modkey,         }, "s",      hotkeys_popup.show_help,
+    awful.key({ modkey, "Shift" }, "p",      hotkeys_popup.show_help,
         {description = "Show help", group="awesome"}),
+
     awful.key({ modkey, "Shift" }, "w", function () awful.util.mymainmenu:show() end,
         {description = "Show main menu", group = "awesome"}),
 
@@ -224,7 +225,8 @@ globalkeys = my_table.join(
     awful.key({ modkey }, ".", function () awful.spawn.with_shell("~/.config/misc/dm-opendot.sh") end,
       {description = "Open Dotfiles", group = "hotkeys"}),
 
-    awful.key({ modkey }, "e", function () awful.spawn.with_shell("~/.config/misc/emacs_launch.sh'") end,
+    awful.key({ modkey }, "e", function () awful.spawn.with_shell("sh -c ~/.config/misc/emacs-launch.sh") end,
+    -- awful.key({ modkey }, "e", function () awful.spawn.with_shell("emacsclient -c") end,
       {description = "Open Emacsclient", group = "hotkeys"}),
 
     awful.key({ modkey }, "o", function () awful.spawn.with_shell("~/.config/misc/dm-logout.sh") end,
@@ -299,8 +301,8 @@ globalkeys = my_table.join(
     -- change layout
     awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
               {description = "select next", group = "layout"}),
-    awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
-              {description = "select previous", group = "layout"}),
+    -- awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
+    --           {description = "select previous", group = "layout"}),
 
     -- On the fly useless gaps change
     -- awful.key({ altkey, ctrlkey }, "j", function () lain.util.useless_gaps_resize(1) end,
@@ -364,14 +366,34 @@ globalkeys = my_table.join(
 )
 
 clientkeys = my_table.join(
+    awful.key({ modkey, "Shift" }, "s",
+        function (c)
+            c.sticky = not c.sticky
+        end,
+        {description = "toggle sticky", group = "client"}),
+
+    awful.key({ modkey }, "s",
+        function (c)
+            c.sticky = not c.sticky
+            c.ontop = not c.ontop
+            if c.sticky then
+                c.floating = true
+            else
+                c.floating = false
+            end
+        end,
+        {description = "toggle floating and sticky", group = "client"}),
+
     awful.key({ altkey, "Shift" }, "m",      lain.util.magnify_client,
-              {description = "magnify client", group = "client"}),
+        {description = "magnify client", group = "client"}),
+
     awful.key({ modkey }, "f",
         function (c)
             c.fullscreen = not c.fullscreen
             c:raise()
         end,
-    {description = "toggle fullscreen", group = "client"}),
+        {description = "toggle fullscreen", group = "client"}),
+
     awful.key({ modkey }, "q", function (c) c:kill() end,
       {description = "close", group = "hotkeys"}),
 
@@ -495,39 +517,26 @@ awful.rules.rules = {
     { rule = { class = "Emacs" },
       properties = { tag = screen[1].tags[2] } },
 
+    { rule_any = { class = { "Steam" } },
+      properties = { tag = screen[1].tags[5] } },
+
     { rule = { name = "tmux" },
       properties = { tag = screen[1].tags[6] } },
 
-    { rule = { name = "btop" },
+    { rule_any = { name = { "ranger", "btop" } },
       properties = { tag = screen[1].tags[7] } },
 
-    { rule_any = { name = { "ranger" } },
+    { rule_any = { class = { "Thunar", "qBittorrent" } },
       properties = { tag = screen[1].tags[7] } },
 
-    { rule_any = { class = { "Thunar" } },
-      properties = { tag = screen[1].tags[7] } },
-
+    { rule_any = { class = { "vlc", "mpv" } },
+      properties = { tag = screen[1].tags[9] } },
 
 
     -- Set applications to be maximized at startup.
     -- find class or role via xprop command
 
     { rule = { class = "Gimp*", role = "gimp-image-window" },
-          properties = { maximized = true } },
-
-    { rule = { class = "inkscape" },
-          properties = { maximized = true } },
-
-    { rule = { class = mediaplayer },
-          properties = { maximized = true } },
-
-    { rule = { class = "Vlc" },
-          properties = { maximized = true } },
-
-    { rule = { class = "VirtualBox Manager" },
-          properties = { maximized = true } },
-
-    { rule = { class = "VirtualBox Machine" },
           properties = { maximized = true } },
 
     { rule = { class = "Xfce4-settings-manager" },

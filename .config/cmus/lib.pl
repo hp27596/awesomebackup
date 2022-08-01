@@ -181,23 +181,26 @@
 /home/hp/Music/FLACs/Freak - Doja Cat.flac
 /home/hp/Music/HotelCalifornia-Eagles_38w3_2.mp3
 /home/hp/Music/CantHelpFallinginLove-ElvisPresley-2902835.mp3
+/home/hp/Music/FLACs/1 Walk On Water (feat. Beyoncé).flac
 /home/hp/Music/WalkOnWater-EminemBeyonce-5345197.mp3
 /home/hp/Music/SauTatCa-ERIKST319-4301357.mp3
 /home/hp/Music/FLACs/Bring Me To Life - Evanescence.flac
+/home/hp/Music/FLACs/My Immortal - Evanescence.flac
 /home/hp/Music/FLACs/Where_d You Go - Fort Minor.flac
 /home/hp/Music/Whered You Go - Fort Minor [NCT 33634236251626562500].mp3
 /home/hp/Music/MyWay-FrankSinatra-3042173.mp3
 /home/hp/Music/FLACs/Sweet Child O_ Mine - Guns N_ Roses.flac
 /home/hp/Music/Sweet Child O Mine - Guns N Roses (NhacPro.net).mp3
+/home/hp/Music/FLACs/What Is Love_ - Haddaway.flac
 /home/hp/Music/can_t help falling in love - Haley Reinh.mp3
 /home/hp/Music/CantHelpFallingInLoveWithYou-HaleyReinhart-4160141.mp3
 /home/hp/Music/PostmodernJukebox/Habits - Haley Reinhart.mp3
 /home/hp/Music/Em Khong Quay Ve - Hoang Ton Yanbi.mp3
+/home/hp/Music/FLACs/Lucky - Jason Mraz_ Colbie Caillat.flac
 /home/hp/Music/FLACs/Twenty-five_ twenty-one 25th - Jaurim.flac
 /home/hp/Music/Dung Nhu Thoi Quen - JayKii_ Sara Luu.mp3
 /home/hp/Music/FLACs/Attention - J_Fla.flac
 /home/hp/Music/FLACs/Wake Me Up When September Ends - J_Fla.flac
-/home/hp/Music/FLACs/Love Of My Life - J_Fla.flac
 /home/hp/Music/FLACs/Day Night - Jung Seung Hwan.flac
 /home/hp/Music/FLACs/Stairway To Heaven - Led Zeppelin.flac
 /home/hp/Music/FLACs/Ngay Mai Em Di - Le Hieu_ Soobin Hoang S.flac
@@ -212,6 +215,7 @@
 /home/hp/Music/FLACs/Royals - Lorde.flac
 /home/hp/Music/FLACs/Can_t Hold Us - Macklemore_ Ray Dalton.flac
 /home/hp/Music/FLACs/Thrift Shop - Macklemore_ Wanz.flac
+/home/hp/Music/FLACs/Sick Enough To Die - MC Mong_ Mellow.flac
 /home/hp/Music/FLACs/Billie Jean - Michael Jackson.flac
 /home/hp/Music/FLACs/Thriller - Michael Jackson.flac
 /home/hp/Music/Yeu Duoi - Nguyen Hoang Dung [MP3 320kbps].mp3
@@ -246,12 +250,10 @@
 /home/hp/Music/FLACs/Queen - Greatest Hits - 02 - Another One Bites The Dust.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits - 03 - Killer Queen.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits - 07 - Don't Stop Me Now.flac
-/home/hp/Music/FLACs/Queen - Greatest Hits - 10 - Somebody To Love.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits - 16 - We Will Rock You.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits - 17 - We Are The Champions.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits II - 02 - Under Pressure.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits II - 05 - I Want To Break Free.flac
-/home/hp/Music/FLACs/Queen - Greatest Hits II - 06 - Innuendo.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits II - 09 - Who Wants To Live Forever.flac
 /home/hp/Music/FLACs/Queen - Greatest Hits II - 16 - The Show Must Go On.flac
 /home/hp/Music/05. Another One Bites The Dust.mp3
@@ -282,6 +284,7 @@
 /home/hp/Music/FLACs/02 - Don't Stop Me Now (Feat. Melinda Doolittle).flac
 /home/hp/Music/FLACs/13 - Nothing Else Matters (feat. Caroline Baran).flac
 /home/hp/Music/Coming Home Pt II - Skylar Grey.mp3
+/home/hp/Music/FLACs/Coming Home Part II_ - Skylar Grey.flac
 /home/hp/Music/DiDeTroVe-SoobinHoangSon-4726882.mp3
 /home/hp/Music/WhereDoWeGo-ThanhBui-TataYoung_3xgkd_hq.mp3
 /home/hp/Music/LetItBe-TheBeatles-37394.mp3

@@ -37,17 +37,30 @@
 ;; wordcount
 (wc-mode t)
 (define-key evil-normal-state-map "\M-c" 'wc-count)
-;; Faster workspace manipulation
-(map! :leader
-      :prefix "TAB"
-      :desc "+swap workspace to the left" "-" #'+workspace/swap-left)
-(map! :leader
-      :prefix "TAB"
-      :desc "swap workspace to the right" "=" #'+workspace/swap-right)
-(map! :leader
-      :desc "next workspace" "-" #'+workspace:switch-previous)
-(map! :leader
-      :desc "previous workspace" "=" #'+workspace:switch-next)
+;; Faster workspace manipulation, uniform key with how I setup my window manager keybind.
+;; (map! :leader
+;;       :prefix "TAB"
+;;       :desc "+swap workspace to the left" "-" #'+workspace/swap-left)
+;; (map! :leader
+;;       :prefix "TAB"
+;;       :desc "swap workspace to the right" "=" #'+workspace/swap-right)
+;; (map! :leader
+;;       :desc "next workspace" "-" #'+workspace:switch-previous)
+;; (map! :leader
+;;       :desc "previous workspace" "=" #'+workspace:switch-next)
+(define-key evil-normal-state-map (kbd "M-K") '+workspace/swap-right)
+(define-key evil-normal-state-map (kbd "M-J") '+workspace/swap-left)
+(map! :after evil-org
+      :map evil-org-mode-map
+      :n "M-J" #'+workspace/swap-left
+      :n "M-K" #'+workspace/swap-right)
+
+(define-key evil-normal-state-map (kbd "M-k") '+workspace:switch-next)
+(define-key evil-normal-state-map (kbd "M-j") '+workspace:switch-previous)
+(map! :after evil-org
+      :map evil-org-mode-map
+      :n "M-j" #'+workspace:switch-previous
+      :n "M-k" #'+workspace:switch-next)
 ;; faster split manipulation
 (map! :leader
       :desc "evil-window-delete" "d" #'evil-window-delete)

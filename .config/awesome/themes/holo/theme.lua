@@ -339,7 +339,7 @@ function theme.at_screen_connect(s)
     }
 
     mytaglistcont = wibox.container.background(s.mytaglist, theme.bg_focus, gears.shape.rectangle)
-    s.mytag = wibox.container.margin(mytaglistcont, dpi(1), dpi(0), dpi(0), dpi(0))
+    s.mytag = wibox.container.margin(mytaglistcont, dpi(1), dpi(0), dpi(2), dpi(0))
 
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons, { bg_focus = theme.bg_focus, shape = gears.shape.rectangle, shape_border_width = 5, shape_border_color = theme.tasklist_bg_normal, align = "center" })
@@ -356,39 +356,18 @@ function theme.at_screen_connect(s)
         layout = wibox.layout.align.vertical,
         { -- Left widgets
             layout = wibox.layout.fixed.vertical,
-            -- first,
             s.mytag,
-            -- spr_small,
-            -- spr_small,
-            -- s.mypromptbox,
         },
         nil, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.vertical,
             s.systray,
             s.mylayoutbox,
-            -- wibox.widget.systray().set_horizontal(false),
-            --theme.mail.widget,
-            --bat.widget,
-            -- spr_right,
-            -- musicwidget,
-            -- bar,
-            -- prev_icon,
-            -- next_icon,
-            -- stop_icon,
-            -- play_pause_icon,
-            -- bar,
-            -- mpd_icon,
-            -- bar,
-            -- spr_very_small,
-            -- volumewidget,
-            -- spr_left,
         },
     }
 
     -- Create the top wibox
     s.mytopwibox = awful.wibar({ position = "top", screen = s, border_width = dpi(0), height = dpi(20) })
-    -- s.borderwibox = awful.wibar({ position = "top", screen = s, height = dpi(1), bg = theme.fg_focus, x = dpi(0), y = dpi(33)})
 
     -- Add widgets to the top wibox
     s.mytopwibox:setup {
@@ -401,16 +380,11 @@ function theme.at_screen_connect(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             spr_bottom_right,
-            -- netdown_icon,
-            -- networkwidget,
-            -- netup_icon,
-            net_wireless,
-            bottom_bar,
             temp,
-            -- cpu_icon,
-            -- cpuwidget,
             bottom_bar,
             bat,
+            bottom_bar,
+            net_wireless,
             bottom_bar,
             volume_widget,
             bottom_bar,

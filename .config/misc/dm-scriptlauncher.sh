@@ -9,7 +9,6 @@ declare -a options=(
     "Word Autocompletion And Suggestion - dm-autocomplete.sh"
     "Update Cmus Library - cmus-update.sh"
     "Reddit TUI (Term) - tuir.sh"
-    "View Keybinds (Term) - exportkeys.sh"
     "Logout Prompt - dm-logout.sh"
     "Connect to Network (Term) - nmtui.sh"
     "Switch Audio Source - dm-switchaudio.sh"
@@ -21,6 +20,7 @@ declare -a options=(
     "Refresh App Launcher Cache - dm-frecency-flush.sh"
     "Open Dotfiles Chooser - dm-opendot.sh"
     "Login Portal/Network Check - networkcheck.sh"
+    "Restart Nextcloud Daemon - restartnextcloud.sh"
 )
 
 # script folder path

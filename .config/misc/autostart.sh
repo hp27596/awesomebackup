@@ -10,7 +10,8 @@ function run {
 # tint2 &
 
 #starting utility applications at boot time
-xautolock -time 10 -locker 'slock' -detectsleep -killtime 12 -killer "systemctl suspend" &
+# xautolock -time 10 -locker 'slock' -detectsleep -killtime 12 -killer "systemctl suspend" &
+xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' --timer 900 'systemctl suspend' '' &
 
 \emacs --daemon &
 nextcloud &
@@ -27,9 +28,9 @@ sleep 2
 alacritty &
 run google-chrome-stable --enable-features=VaapiVideoDecoder,VaapiVideoEncoder --disable-features=UseChromeOSDirectVideoDecoder --gtk-version=4 &
 
-sleep 1
 tmux kill-server &
-alacritty --name tmux -e tmux &
+sleep 1
+alacritty -t tmux -e tmux &
 
 sh ~/.config/qtile/scripts/batterynotification.sh &
 
