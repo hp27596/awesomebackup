@@ -22,6 +22,7 @@ declare -a options=(
     "Tmux - ~/.tmux.conf"
     "Picom - ~/.config/picom/picom.conf"
     "Tint2 - ~/.config/tint2/tint2rc"
+    "Cava - ~/.config/cava/config"
 )
 
 # add number count
