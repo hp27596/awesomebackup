@@ -166,13 +166,23 @@
 /home/hp/Music/JFla/[YT2mp3.info] - You Raise Me Up ( cover by J.Fla ) (320kbps).mp3
 /home/hp/Music/[YT2mp3.info] - __소녀__ (A Little Girl) by 오혁 (OH HYUK) Lyrics MV (320kbps).mp3
 /home/hp/Music/FLACs/Take On Me MTV Unplugged_ - A-ha.flac
+/home/hp/Music/FLACs/Nessun Dorma - Andrea Bocelli.flac
+/home/hp/Music/FLACs/La Vie En Rose - Andrea Bocelli- contain.flac
+/home/hp/Music/FLACs/01 - The Four Seasons Spring Concerto in E major, op. 8 no. 1, RV 269 I. Allegro - Mixed.flac
+/home/hp/Music/FLACs/06 - The Four Seasons Summer Concerto in G minor, op. 8 no. 2, RV 315 III. Presto - Mixed.flac
+/home/hp/Music/FLACs/07 - The Four Seasons Autumn Concerto in F major, op. 8 no. 3, RV 293 I. Allegro - Mixed.flac
+/home/hp/Music/FLACs/10 - The Four Seasons Winter Concerto in F minor, op. 8 no. 4, RV 297 I. Allegro n - Mixed.flac
+/home/hp/Music/FLACs/Em Oi Ha Noi Pho - Bang Kieu.flac
 /home/hp/Music/EmOiHaNoiPho-BangKieu-3145883.mp3
 /home/hp/Music/FLACs/Never Never Gonna Give You Up - Barry Wh.flac
 /home/hp/Music/FLACs/Bad Guy - Billie Eilish.flac
 /home/hp/Music/FLACs/Lovely - Billie Eilish_ Khalid.flac
 /home/hp/Music/It's My Life-Bon Jovi.mp3
+/home/hp/Music/FLACs/Criminal - Britney Spears.flac
+/home/hp/Music/FLACs/Toxic - Britney Spears.flac
 /home/hp/Music/FLACs/havana__camila-cabello__1000kbps____.flac
 /home/hp/Music/FLACs/Something About Us - Daft Punk.flac
+/home/hp/Music/FLACs/Around The World LP Version_ - Daft Punk.flac
 /home/hp/Music/FLACs/Harder_ Better_ Faster_ Stronger - Daft.flac
 /home/hp/Music/FLACs/Touch - Daft Punk_ Paul Williams.flac
 /home/hp/Music/Touch - Daft Punk_ Paul Williams.mp3
@@ -181,11 +191,14 @@
 /home/hp/Music/FLACs/Freak - Doja Cat.flac
 /home/hp/Music/HotelCalifornia-Eagles_38w3_2.mp3
 /home/hp/Music/CantHelpFallinginLove-ElvisPresley-2902835.mp3
+/home/hp/Music/FLACs/Can_t Help Falling In Love - Elvis Presl.flac
 /home/hp/Music/FLACs/1 Walk On Water (feat. Beyoncé).flac
 /home/hp/Music/WalkOnWater-EminemBeyonce-5345197.mp3
+/home/hp/Music/FLACs/Stan - Eminem_ Dido.flac
 /home/hp/Music/SauTatCa-ERIKST319-4301357.mp3
 /home/hp/Music/FLACs/Bring Me To Life - Evanescence.flac
 /home/hp/Music/FLACs/My Immortal - Evanescence.flac
+/home/hp/Music/FLACs/The Chain - Fleetwood Mac.flac
 /home/hp/Music/FLACs/Where_d You Go - Fort Minor.flac
 /home/hp/Music/Whered You Go - Fort Minor [NCT 33634236251626562500].mp3
 /home/hp/Music/MyWay-FrankSinatra-3042173.mp3
@@ -206,8 +219,13 @@
 /home/hp/Music/FLACs/Ngay Mai Em Di - Le Hieu_ Soobin Hoang S.flac
 /home/hp/Music/FLACs/In The End - Linkin Park.flac
 /home/hp/Music/FLACs/The Catalyst - Linkin Park.flac
+/home/hp/Music/FLACs/When They Come For Me - Linkin Park.flac
+/home/hp/Music/FLACs/A Place For My Head - Linkin Park.flac
+/home/hp/Music/FLACs/I_ll Be Gone - Linkin Park.flac
+/home/hp/Music/FLACs/Faint - Linkin Park.flac
 /home/hp/Music/FLACs/What I_ve Done - Linkin Park.flac
 /home/hp/Music/FLACs/The Little Things Give You Away_ - Linki.flac
+/home/hp/Music/FLACs/Bleed It Out - Linkin Park.flac
 /home/hp/Music/FLACs/New Divide - Linkin Park.flac
 /home/hp/Music/New Divine - Linkin Park.mp3
 /home/hp/Music/In The End - Linkin Park [NCT 32633888900113662500].mp3
@@ -268,6 +286,7 @@
 /home/hp/Music/21. Who Wants To Live Forever.mp3
 /home/hp/Music/35. The Show Must Go On.mp3
 /home/hp/Music/UnderPressure-QueenDavidBowie-4704785.mp3
+/home/hp/Music/FLACs/Clair De Lune - Sakata Tomoki.flac
 /home/hp/Music/AlwaysSomewhere-Scorpions_tc8.mp3
 /home/hp/Music/FLACs/08 - No Diggity (feat. Ariana Savalas).flac
 /home/hp/Music/FLACs/11 - All About That Bass (feat. Kate Davis).flac
@@ -294,5 +313,6 @@
 /home/hp/Music/FLACs/minh yeu nhau yeu nhau binh yen thoi - T.flac
 /home/hp/Music/Linh Hồn Vẫn Tồn Tại-UnlimiteD.mp3
 /home/hp/Music/TaKillYaBabyDriverMix-VinnieManiscalco-5413629.mp3
+/home/hp/Music/FLACs/Scream And Shout - Will I Am_ Britney Sp.flac
 /home/hp/Music/ThuCuoi-Yanbi-MrT-HangBingBoong_3k5vk.mp3
 /home/hp/Music/FLACs/Thu Cuoi - Yanbi_ Mr_T_ Hang BingBoong.flac

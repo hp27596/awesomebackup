@@ -138,6 +138,7 @@ alias tmuxa='tmux attach -t 0'
 alias wlg='nohup wl-gammactl -g' #wayland extended brightness
 alias xrandrbr='xrandr --output eDP1 --brightness' #set extended brightness
 alias emacs="~/.config/misc/emacs-launch.sh"
+alias ydl="youtube-dl"
 
 cdl() { cd "$@" && ls; }
 
@@ -168,4 +169,6 @@ function  vi-yank-xclip {
 
 zle -N vi-yank-xclip
 bindkey -M vicmd 'y' vi-yank-xclip
+
+bindkey "^R" history-incremental-search-backward
 

@@ -273,11 +273,15 @@ local temp = lain.widget.temp({
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume') { widget_type = 'icon_and_text' }
 
 -- Weather
-weather = awful.widget.watch([[ bash -c '~/.config/awesome/wttr.sh']], 300, function(widget, stdout) widget:set_markup(markup.font("Ubuntu Mono 9", stdout)) end )
+local weather = awful.widget.watch([[ bash -c '~/.config/awesome/wttr.sh']], 300, function(widget, stdout) widget:set_markup(markup.font("Ubuntu Mono 9", stdout)) end )
 
 -- Launcher
 local mylauncher = awful.widget.button({ image = theme.awesome_icon_launcher })
-mylauncher:connect_signal("button::press", function() awful.util.mymainmenu:toggle() end)
+mylauncher:connect_signal("button::press", function() awful.util.mymainmenu:toggle() end )
+
+-- Caffeinate
+caffeine_widget, caffeine_timer = awful.widget.watch([[ bash -c '~/.config/awesome/caffe_watch.sh' ]], 60, function(widget, stdout) widget:set_markup(markup.font("Ubuntu Mono 13", stdout)) end )
+caffeine_widget:connect_signal("button::press", function() awful.spawn.with_shell('~/.config/awesome/caffe_toggle.sh') end )
 
 -- Separators
 local first = wibox.widget.textbox('<span font="Roboto 7"> </span>')
@@ -331,7 +335,7 @@ function theme.at_screen_connect(s)
 			layout  = wibox.layout.fixed.vertical
         },
         style = {
-            shape = gears.shape.powerline,
+            -- shape = gears.shape.powerline,
             bg_focus = barcolor,
             font = 7,
             spacing = 25,
@@ -380,11 +384,14 @@ function theme.at_screen_connect(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             spr_bottom_right,
+            bottom_bar,
             temp,
             bottom_bar,
             bat,
             bottom_bar,
+            -- bar,
             net_wireless,
+            -- spr_small,
             bottom_bar,
             volume_widget,
             bottom_bar,
@@ -394,6 +401,9 @@ function theme.at_screen_connect(s)
             clock_icon,
             bottom_bar,
             clockwidget,
+            bottom_bar,
+            caffeine_widget,
+            bottom_bar,
             weather,
             bottom_bar,
         },

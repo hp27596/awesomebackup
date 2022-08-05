@@ -11,13 +11,13 @@ function run {
 
 #starting utility applications at boot time
 # xautolock -time 10 -locker 'slock' -detectsleep -killtime 12 -killer "systemctl suspend" &
-xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' --timer 900 'systemctl suspend' '' &
+xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' --timer 900 'systemctl suspend' '' --socket "/tmp/xidlehook.sock" &
 
 \emacs --daemon &
 nextcloud &
 fcitx5 &
 blueman-applet &
-caffeine &
+# caffeine &
 picom --config ~/.config/picom/picom.conf --experimental-backends &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # dunst &

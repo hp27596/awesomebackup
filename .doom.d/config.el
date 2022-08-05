@@ -10,7 +10,19 @@
   (global-tree-sitter-mode)
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 
+;; pico8
+(add-to-list 'load-path "~/.doom.d/pico8/")
+(require 'pico8-mode)
+(add-to-list 'auto-mode-alist '("\\.p8\\'" . pico8-mode))
 
+;; ternjs
+;; (add-hook 'js-mode-hook (lambda () (tern-mode t)))
+;; (add-to-list 'company-backends 'company-tern)
+;; (eval-after-load 'tern
+;;    '(progn
+;;       ;; (require 'tern-auto-complete)
+;;       (require 'company-tern)
+;;       (tern-ac-setup)(auto-complete-mode)))
 
 ;; :q should kill the current buffer rather than quitting emacs entirely
 ;; Evil mode rebinds

@@ -265,6 +265,13 @@ globalkeys = my_table.join(
     awful.key({ ctrlkey }, "Print", function () awful.spawn.with_shell("flameshot gui") end,
         {description = "Capture Part of Screen", group = "hotkeys"}),
 
+    -- Caffeinate
+    awful.key({ modkey, "Shift" }, "i",
+        function ()
+            awful.spawn.with_shell("~/.config/awesome/caffe_toggle.sh")
+        end,
+        {description = "Toggle Caffeinate", group = "hotkeys"} ),
+
     -- Tag browsing with modkey
     awful.key({ modkey,         }, "Up",   awful.tag.viewprev,
         {description = "view previous", group = "tag"}),
@@ -670,5 +677,9 @@ end
 client.connect_signal("focus", border_adjust)
 client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
+
+client.connect_signal("property::minimized", function(c)
+    c.minimized = false
+end)
 
 awful.spawn.once("sh -c ~/.config/misc/autostart.sh", {})

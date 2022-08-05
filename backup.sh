@@ -24,7 +24,7 @@ rsync -Pra --delete ~/.config/{awesome,misc,alacritty,bottom,btop,cmus,dunst,fci
 cp -r ~/.doom.d/ $HOME/awesomebackup/
 # cp -r ~/.fonts/ $HOME/awesomebackup/
 
-cp /etc/{environment,pacman.conf,vconsole.conf} $HOME/awesomebackup/etc/
+cp /etc/{environment,pacman.conf,vconsole.conf,tlp.conf} $HOME/awesomebackup/etc/
 
 # copy other dot files
 rsync -Pra $HOME/{'.gtkrc-2.0',.vimrc,.zshrc,.xprofile,.Xresources,.tmux.conf,.ticker.yaml} $HOME/awesomebackup
