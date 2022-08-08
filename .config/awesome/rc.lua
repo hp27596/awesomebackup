@@ -86,7 +86,7 @@ awful.util.terminal = terminal
 awful.util.tagnames = {}
 local names = {"", "", "", "", "", "", "", "", ""}
 local l = awful.layout.suit  -- Just to save some typing: use an alias.
-local layouts = { l.tile, l.max, l.max, l.max, l.max,
+local layouts = { l.tile, l.max, l.max, l.tile, l.max,
     l.max, l.max, l.max, l.max }
 awful.tag(names, s, layouts)
 
@@ -304,6 +304,11 @@ globalkeys = my_table.join(
     --     {description = "focus the next screen", group = "screen"}),
     -- awful.key({ modkey          }, ",", function () awful.screen.focus_relative(-1) end,
     --     {description = "focus the previous screen", group = "screen"}),
+    awful.key({ modkey, ctrlkey }, "k", function () awful.client.incwfact( 0.05) end,
+        {description = "swap with next client by index", group = "client"}),
+    awful.key({ modkey, ctrlkey }, "j", function () awful.client.incwfact(-0.05) end,
+        {description = "swap with previous client by index", group = "client"}),
+
 
     -- change layout
     awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
@@ -382,11 +387,12 @@ clientkeys = my_table.join(
     awful.key({ modkey }, "s",
         function (c)
             c.sticky = not c.sticky
-            c.ontop = not c.ontop
             if c.sticky then
                 c.floating = true
+                c.ontop = true
             else
                 c.floating = false
+                c.ontop = false
             end
         end,
         {description = "toggle floating and sticky", group = "client"}),
@@ -460,6 +466,7 @@ for i = 1, 9 do
                           local tag = client.focus.screen.tags[i]
                           if tag then
                               client.focus:move_to_tag(tag)
+                              tag:view_only()
                           end
                      end
                   end,
@@ -536,7 +543,7 @@ awful.rules.rules = {
     { rule_any = { class = { "Thunar", "qBittorrent" } },
       properties = { tag = screen[1].tags[7] } },
 
-    { rule_any = { class = { "vlc", "mpv" } },
+    { rule_any = { class = { "vlc" } },
       properties = { tag = screen[1].tags[9] } },
 
 
@@ -571,7 +578,7 @@ awful.rules.rules = {
           "Peek",
           "Skype",
           "System-config-printer.py",
-          "Sxiv",
+          -- "Sxiv",
           "Unetbootin.elf",
           "Wpa_gui",
           "pinentry",

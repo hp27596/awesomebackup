@@ -175,8 +175,11 @@
 /home/hp/Music/FLACs/Em Oi Ha Noi Pho - Bang Kieu.flac
 /home/hp/Music/EmOiHaNoiPho-BangKieu-3145883.mp3
 /home/hp/Music/FLACs/Never Never Gonna Give You Up - Barry Wh.flac
+/home/hp/Music/FLACs/Bury A Friend - Billie Eilish.flac
+/home/hp/Music/FLACs/Oxytocin - Billie Eilish.flac
+/home/hp/Music/FLACs/Happier Than Ever - Billie Eilish.flac
+/home/hp/Music/FLACs/When The Party_s Over - Billie Eilish.flac
 /home/hp/Music/FLACs/Bad Guy - Billie Eilish.flac
-/home/hp/Music/FLACs/Lovely - Billie Eilish_ Khalid.flac
 /home/hp/Music/It's My Life-Bon Jovi.mp3
 /home/hp/Music/FLACs/Criminal - Britney Spears.flac
 /home/hp/Music/FLACs/Toxic - Britney Spears.flac

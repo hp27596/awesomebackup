@@ -13,8 +13,8 @@
 ;; pico8
 (add-to-list 'load-path "~/.doom.d/pico8/")
 (require 'pico8-mode)
-(add-to-list 'auto-mode-alist '("\\.p8\\'" . pico8-mode))
-
+;; (add-to-list 'auto-mode-alist '("\\.p8\\'" . lua-mode))
+(add-hook 'pico8-mode-hook  (lambda () (setq evil-shift-width 2)))
 ;; ternjs
 ;; (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 ;; (add-to-list 'company-backends 'company-tern)
