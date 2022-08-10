@@ -14,7 +14,7 @@
 (add-to-list 'load-path "~/.doom.d/pico8/")
 (require 'pico8-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.p8\\'" . lua-mode))
-(add-hook 'pico8-mode-hook  (lambda () (setq evil-shift-width 2)))
+(add-hook 'pico8-mode-hook  (lambda () (setq evil-shift-width 1)(setq tab-width 1)))
 ;; ternjs
 ;; (add-hook 'js-mode-hook (lambda () (tern-mode t)))
 ;; (add-to-list 'company-backends 'company-tern)
@@ -46,6 +46,8 @@
 
 
 ;; Custom Functions/Keybinds
+;; unset SPC SPC
+(map! :leader :nv "SPC" nil)
 ;; wordcount
 (wc-mode t)
 (define-key evil-normal-state-map "\M-c" 'wc-count)
