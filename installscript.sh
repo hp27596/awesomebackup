@@ -49,7 +49,7 @@ systemctl --user enable pulseaudio pulseaudio.socket
 yay -S interception-tools nextcloud-client ranger flameshot ncdu steam ardour fortune-mod aircrack-ng bully reaaver tmux libreoffice-fresh metasploit cowpatty wireshark termshark macchanger pixiewps john android-sdk-platform-tools nerd-fonts-jetbrains-mono krita xorg-fonts gucharmap qbittorrent rustscan cpupower-gui wine-staging bottom vlc tldr lutris fcitx5 fcitx5-gtk fcitx5-qt fcitx5-unikey kcm-fcitx5 btop clipmenu gparted pass pass-otp sxiv scrcpy qutebrowser trash-cli kdeconnect zathura zathura-pdf-mupdf easytag gnome-power-manager
 
 # Install AUR packages
-yay -S caffeine-ng cava cmus-notify google-chrome material-black-colors-theme ncmatrix nerd-fonts-ubuntu-mono pyrit python-pulsectl ticker timeshift-bin noto-fonts-emoji-apple mangohud-git ttf-unifont ttf-font-awesome otf-font-awesome protonvpn goverlay ttf-ubuntu-font-family ttf-ms-fonts nuclear-player-bin routersploit-git
+yay -S caffeine-ng cava cmus-notify google-chrome material-black-colors-theme ncmatrix nerd-fonts-ubuntu-mono pyrit python-pulsectl ticker timeshift-bin noto-fonts-emoji-apple mangohud-git ttf-unifont ttf-font-awesome otf-font-awesome protonvpn goverlay ttf-ubuntu-font-family ttf-ms-fonts nuclear-player-bin routersploit-git update-grub
 
 # Post installation
 # refresh font cache
@@ -94,3 +94,6 @@ cd ~
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 # Run :PlugInstall
+
+git clone --depth 1 https://gitlab.com/VandalByte/darkmatter-grub-theme.git && cd darkmatter-grub-theme
+sudo python3 darkmatter-theme.py --install

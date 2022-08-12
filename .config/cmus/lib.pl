@@ -176,10 +176,19 @@
 /home/hp/Music/EmOiHaNoiPho-BangKieu-3145883.mp3
 /home/hp/Music/FLACs/Never Never Gonna Give You Up - Barry Wh.flac
 /home/hp/Music/FLACs/Bury A Friend - Billie Eilish.flac
+/home/hp/Music/FLACs/COPYCAT - Billie Eilish.flac
+/home/hp/Music/FLACs/Getting Older - Billie Eilish.flac
+/home/hp/Music/FLACs/Billie Bossa Nova - Billie Eilish.flac
 /home/hp/Music/FLACs/Oxytocin - Billie Eilish.flac
+/home/hp/Music/FLACs/Halley_s Comet - Billie Eilish.flac
 /home/hp/Music/FLACs/Happier Than Ever - Billie Eilish.flac
+/home/hp/Music/FLACs/NDA - Billie Eilish.flac
 /home/hp/Music/FLACs/When The Party_s Over - Billie Eilish.flac
 /home/hp/Music/FLACs/Bad Guy - Billie Eilish.flac
+/home/hp/Music/FLACs/all the good girls go to hell - Billie E.flac
+/home/hp/Music/FLACs/ilomilo - Billie Eilish.flac
+/home/hp/Music/FLACs/02.-Everything I Wanted.flac
+/home/hp/Music/FLACs/14.-Idontwannabeyouanymore.flac
 /home/hp/Music/It's My Life-Bon Jovi.mp3
 /home/hp/Music/FLACs/Criminal - Britney Spears.flac
 /home/hp/Music/FLACs/Toxic - Britney Spears.flac
