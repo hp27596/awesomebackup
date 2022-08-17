@@ -23,6 +23,7 @@ declare -a options=(
     "Picom - ~/.config/picom/picom.conf"
     "Tint2 - ~/.config/tint2/tint2rc"
     "Cava - ~/.config/cava/config"
+    "Rofi - ~/.config/rofi/config.rasi"
 )
 
 # add number count

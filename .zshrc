@@ -172,3 +172,4 @@ bindkey -M vicmd 'y' vi-yank-xclip
 
 bindkey "^R" history-incremental-search-backward
 
+setopt histignoredups

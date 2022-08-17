@@ -213,7 +213,10 @@ globalkeys = my_table.join(
     awful.key({ modkey, "Shift" }, "w", function () awful.util.mymainmenu:show() end,
         {description = "Show main menu", group = "awesome"}),
 
-    awful.key({ modkey }, "r", function () awful.spawn.with_shell("~/.config/misc/dm-frecency") end,
+    -- awful.key({ modkey }, "r", function () awful.spawn.with_shell("~/.config/misc/dm-frecency") end,
+    --   {description = "Run Program Launcher", group = "hotkeys"}),
+
+    awful.key({ modkey }, "r", function () awful.spawn.with_shell("rofi -show combi -theme '~/.config/rofi/launchers/type-4/style-1.rasi'") end,
       {description = "Run Program Launcher", group = "hotkeys"}),
 
     awful.key({ modkey }, "t", function () awful.spawn.with_shell("thunar") end,
@@ -418,12 +421,23 @@ clientkeys = my_table.join(
       {description = "toggle keep on top", group = "client"}),
     -- awful.key({ modkey,         }, "o", function (c) c:move_to_screen() end,
     --   {description = "move to screen", group = "client"}),
+
     awful.key({ modkey,           }, "m",
-        function (c)
-            c.maximized = not c.maximized
-            c:raise()
-        end ,
-    {description = "maximize", group = "client"})
+        function ()
+            if string.match(mouse.screen.selected_tag.layout.name, 'max') then
+                awful.layout.set(awful.layout.suit.tile)
+            else
+                awful.layout.set(awful.layout.suit.max)
+            end
+        end,
+        {description = "toggle between max and tile layout", group = "client"})
+
+    -- awful.key({ modkey,           }, "m",
+    --     function (c)
+    --         c.maximized = not c.maximized
+    --         c:raise()
+    --     end ,
+    -- {description = "maximize", group = "client"})
 )
 
 -- Bind all key numbers to tags.
