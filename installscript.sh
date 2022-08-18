@@ -15,12 +15,14 @@ sudo makepkg -si
 cd ~/awesomebackup
 # copy dotfiles
 mkdir $HOME/.config
-cd ~/awesomebackup/
+cp -r .doom.d ~/
+# cd ~/awesomebackup/
 # cp -r .fonts ~/
 # sudo cp -r ./etc/ /
 sudo rsync -av --progress ./etc/ /etc --exclude X11
 sudo cp pfetch /usr/local/bin/
 rsync -av --progress ./.config/ $HOME/.config --exclude .git
+cp ./{.ticker.yaml,.tmux.conf,.xprofile,.vimrc,.Xresources,.zshrc,.gtkrc-2.0} ~/
 
 # Install essential packages
 yay -S emacs zsh intel-media-driver intel-gpu-tools va-utils thunar sshfs picom dmenu xorg-xinput brightnessctl alsa-utils seahorse polkit-gnome gnome-keyring libgnome-keyring bluez bluez-tools bluez-utils speedtest-cli lxappearance-gtk3 material-black-colors-theme dunst perl playerctl pnmixer xautolock cmake fzf feh cmus gnome-disk-utility python-pip python iw net-tools htop mpv tk ctags nodejs npm xclip xsel yarn firewalld picom pacman-contrib neovim gvfs gvfs-mtp adobe-source-code-pro-fonts tlp tlp-rdw cargo fuse-exfat linux-zen
