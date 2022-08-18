@@ -17,7 +17,8 @@ cd ~/awesomebackup
 mkdir $HOME/.config
 cd ~/awesomebackup/
 # cp -r .fonts ~/
-sudo cp -r ./etc/ /
+# sudo cp -r ./etc/ /
+sudo rsync -av --progress ./etc/ /etc --exclude X11
 sudo cp pfetch /usr/local/bin/
 rsync -av --progress ./.config/ $HOME/.config --exclude .git
 
@@ -29,10 +30,6 @@ sudo systemctl enable tlp
 sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 sudo tlp start
 tlp-rdw
-
-# caffeinate
-cargo install --git https://github.com/rschmukler/caffeinate
-sudo cp ~/.cargo/bin/caffeinate /usr/local/bin/
 
 # Install pulseaudio or pipewire. My gpd pocket 2 somehow randomly only works with either one on different distros.
 # pipewire
@@ -53,13 +50,12 @@ yay -S caffeine-ng cava cmus-notify google-chrome material-black-colors-theme nc
 
 # Post installation
 # refresh font cache
-fc-cache -fv
+# fc-cache -fv
 
 # install and move to zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-sudo chsh -s /usr/bin/zsh
 
 # pip packages
 sudo pip install python-nmap
@@ -74,9 +70,8 @@ sudo systemctl start bluetooth cronie firewalld
 
 # dmenu fork
 cd ~
-# git clone https://github.com/sbstnc/dmenu-ee
-git clone https://gitlab.com/dwt1/dmenu-distrotube.git
-cd dmenu-distrotube.git
+git clone https://github.com/hp27596/dmenu-distrotube-fork
+cd dmenu-distrotube-fork
 sudo make clean install
 cd ~
 
@@ -95,5 +90,14 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 # Run :PlugInstall
 
+# caffeinate
+cargo install --git https://github.com/rschmukler/caffeinate
+sudo cp ~/.cargo/bin/caffeinate /usr/local/bin/
+
+# grub theme
 git clone --depth 1 https://gitlab.com/VandalByte/darkmatter-grub-theme.git && cd darkmatter-grub-theme
 sudo python3 darkmatter-theme.py --install
+cd ~
+
+# change shell
+sudo chsh -s /usr/bin/zsh
